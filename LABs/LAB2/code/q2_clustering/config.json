@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "candidate_k": [5, 8, 10, 12, 15, 20, 25, 30],
+  "seeds": [17, 42],
+  "n_init": 3,
+  "kmeans_max_iter": 200,
+  "kmeans_tol": 0.0001,
+  "gmm_max_iter": 100,
+  "gmm_tol": 0.0001,
+  "reg_covar": 0.0001,
+  "standardize": false,
+  "silhouette_sample_size": 3000,
+  "silhouette_seed": 20261011,
+  "threads": 4
+}

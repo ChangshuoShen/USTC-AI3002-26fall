@@ -1,0 +1,7 @@
+numpy>=2.0
+scipy
+scikit-learn
+threadpoolctl
+matplotlib>=3.9
+torch==2.11.0
+pytest>=8

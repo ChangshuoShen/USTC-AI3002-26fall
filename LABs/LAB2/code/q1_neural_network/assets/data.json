@@ -1,0 +1,74 @@
+{
+  "dtype": "float32",
+  "train_size": 1024,
+  "grid_size": 65,
+  "random_split_at_runtime": false,
+  "tasks": {
+    "expression": {
+      "file": "expression.npz",
+      "data_seed": 20261018,
+      "extent": 1.5,
+      "coordinates_generation_dtype": "float64, then cast to float32",
+      "target_evaluation_dtype": "float32",
+      "arrays": {
+        "train_x": {
+          "shape": [
+            1024,
+            2
+          ]
+        },
+        "train_y": {
+          "shape": [
+            1024,
+            1
+          ]
+        },
+        "grid_x": {
+          "shape": [
+            4225,
+            2
+          ]
+        },
+        "grid_y": {
+          "shape": [
+            4225,
+            1
+          ]
+        }
+      }
+    },
+    "gradient": {
+      "file": "gradient.npz",
+      "data_seed": 20261019,
+      "extent": 1.0,
+      "coordinates_generation_dtype": "float64, then cast to float32",
+      "target_evaluation_dtype": "float64, then cast to float32",
+      "arrays": {
+        "train_x": {
+          "shape": [
+            1024,
+            2
+          ]
+        },
+        "train_y": {
+          "shape": [
+            1024,
+            1
+          ]
+        },
+        "grid_x": {
+          "shape": [
+            4225,
+            2
+          ]
+        },
+        "grid_y": {
+          "shape": [
+            4225,
+            1
+          ]
+        }
+      }
+    }
+  }
+}

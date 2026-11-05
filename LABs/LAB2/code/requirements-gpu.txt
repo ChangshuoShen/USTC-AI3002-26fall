@@ -1,0 +1,9 @@
+--index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+--extra-index-url https://pypi.org/simple
+numpy>=2.0
+scipy
+scikit-learn
+threadpoolctl
+matplotlib>=3.9
+pytest>=8

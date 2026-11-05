@@ -1,0 +1,119 @@
+{
+  "python": "3.14.8",
+  "torch": "2.14.1",
+  "device": "cpu",
+  "dtype": "float32",
+  "generation_seed": 17,
+  "tasks": {
+    "expression": {
+      "A": {
+        "widths": [
+          16
+        ],
+        "activation": "relu",
+        "parameters": 65,
+        "steps": 3000,
+        "learning_rate": 0.01
+      },
+      "B": {
+        "widths": [
+          16
+        ],
+        "activation": "relu",
+        "parameters": 65,
+        "steps": 9000,
+        "learning_rate": 0.01
+      },
+      "C": {
+        "widths": [
+          64
+        ],
+        "activation": "relu",
+        "parameters": 257,
+        "steps": 3000,
+        "learning_rate": 0.01
+      },
+      "D": {
+        "widths": [
+          8,
+          4
+        ],
+        "activation": "relu",
+        "parameters": 65,
+        "steps": 3000,
+        "learning_rate": 0.01
+      }
+    },
+    "gradient": {
+      "A": {
+        "widths": [
+          32,
+          32
+        ],
+        "activation": "sigmoid",
+        "parameters": 1185,
+        "steps": 1000,
+        "learning_rate": 0.05
+      },
+      "B": {
+        "widths": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "activation": "sigmoid",
+        "parameters": 7521,
+        "steps": 1000,
+        "learning_rate": 0.05
+      },
+      "C": {
+        "widths": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "activation": "relu",
+        "parameters": 7521,
+        "steps": 1000,
+        "learning_rate": 0.05
+      },
+      "D": {
+        "widths": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "activation": "sigmoid",
+        "parameters": 7521,
+        "steps": 1000,
+        "learning_rate": 0.1
+      }
+    }
+  },
+  "shared_states": [
+    [
+      "expression/A",
+      "expression/B"
+    ],
+    [
+      "gradient/B",
+      "gradient/C",
+      "gradient/D"
+    ]
+  ]
+}
